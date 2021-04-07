@@ -34,15 +34,15 @@ window.onload = function () {
      
     
     function startTimer () {
-    //   minutes++
+      minutes++
 
-    //   if(minutes <= 9){
-    //     appendMinutes.innerHTML = "0" + minutes;
-    //   }
+      if(minutes <= 9){
+        appendMinutes.innerHTML = "0" + minutes;
+      }
 
-    //   if(minutes > 9){
-    //     appendMinutes.innerHTML = minutes;
-    //   }
+      if(minutes > 9){
+        appendMinutes.innerHTML = minutes;
+      }
 
       tens++; 
       
