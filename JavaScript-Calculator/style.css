@@ -1,0 +1,68 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url('background.jfif');
+}
+
+/*wrapping buttons and elements, centering items*/
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  /*because we want to align the content as a whole and not just the items*/
+  align-content: center;
+  min-height: 100vh;
+  /*4 columns with 100px each*/
+  grid-template-columns: repeat(4, 100px);
+  /*including the minmax value so that the input section can grow as needed, and creating 5 rows for the 5 rows of buttons*/
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, .90);
+}
+
+.span-two {
+  /*creating a greater space for the AC + = buttons*/
+  grid-column: span 2;
+}
+
+.output {
+  /*stretching the output class to spread the total of the entire calculator*/
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .75);
+  display: flex;
+  align-items: flex-end;
+  /*create space from the top and bottom of the screen + bring the numbers slightly closer together*/
+  justify-content: space-around;
+  /*line up the two columns of numbers in the screen*/
+  flex-direction: column;
+  /*padding allows there to be space next to the numbers inside the screen*/
+  padding: 10px;
+  /*the below is so that the numbers will stretch to the bottom of screen*/
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 1.5rem;
+}
