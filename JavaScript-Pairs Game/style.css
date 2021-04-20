@@ -1,0 +1,40 @@
+body {
+  background-image: url("giphy.webp");
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center;
+  min-height:100vh;
+}
+
+/* (A) CONTAINER */
+#stopwatch {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 320px;
+  margin: 0 auto; 
+}
+
+/* (B) TIME */
+#sw-time {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  background: gray;
+  color: black;
+}
+ 
+/* (C) BUTTONS */
+#sw-rst, #sw-go {
+  box-sizing: border-box;
+  width: 50%;
+  cursor: pointer;
+  padding: 20px 0;
+  border: 0;
+  color: black;
+  font-size: 20px;
+}
+#sw-rst { background-color: lightblue; }
+#sw-go { background-color: pink; }
+
