@@ -22,4 +22,32 @@ body {
   background: radial-gradient(#ADD8E6, #00008b);
 }
 
-/* #margin */
+#pad1 {
+  margin: 10px;
+}
+
+#pad2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#pad3 {
+  margin: 10px;
+
+}
+
+#pad4 {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#pad5 {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#pad6 {
+  margin-bottom: 10px;
+  margin-right: 10px;
+} 
