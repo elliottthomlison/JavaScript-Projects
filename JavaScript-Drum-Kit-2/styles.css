@@ -19,35 +19,47 @@ body {
   justify-content: center;
   align-items: center;
   flex: 1 0 calc(33.33% - 20px);
-  background: radial-gradient(#ADD8E6, #00008b);
+  border-radius: 10px;
+  background: white;
 }
 
 #pad1 {
   margin: 10px;
+  background-image: url("./icons/chicken.png");
+  background-repeat: space;
 }
 
 #pad2 {
   margin-top: 10px;
   margin-bottom: 10px;
+  background-image: url("./icons/dog.png");
+  background-repeat: space;
 }
 
 #pad3 {
   margin: 10px;
-
+  background-image: url("./icons/duck.png");
+  background-repeat: space;
 }
 
 #pad4 {
   margin-bottom: 10px;
   margin-left: 10px;
+  background-image: url("./icons/horse.png");
+  background-repeat: space;
 }
 
 #pad5 {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+  background-image: url("./icons/frog.png");
+  background-repeat: space;
 }
 
 #pad6 {
   margin-bottom: 10px;
   margin-right: 10px;
+  background-image: url("./icons/monke.png");
+  background-repeat: space;
 } 
