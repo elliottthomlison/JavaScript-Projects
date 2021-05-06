@@ -4,18 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css"
-  <script src="app.js"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <!-- <script src="app.js"></script> -->
   <title>Animal Drum Kit</title>
 </head>
 <body>
   <div class="drumkit">
-    <div class="pads" id="pad1"></div>
-    <div class="pads" id="pad2"></div>
-    <div class="pads" id="pad3"></div>
-    <div class="pads" id="pad4"></div>
-    <div class="pads" id="pad5"></div>
-    <div class="pads" id="pad6"></div>
+    <div class="pads" id="pad1" data-key="1" class="key ui-box q">
+      <kbd>Q</kbd>
+      <span>Chicken</span>
+    </div>
+    <div class="pads" id="pad2" data-key="2" class="key ui-box w">
+      <kbd>W</kbd>
+      <span>Dog</span>
+    </div>
+    <div class="pads" id="pad3" data-key="3" class="key ui-box e">
+      <kbd>E</kbd>
+      <span>Duck</span>
+    </div>
+    <div class="pads" id="pad4" data-key="4" class="key ui-box r">
+      <kbd>R</kbd>
+      <span>Horse</span>
+    </div>
+    <div class="pads" id="pad5" data-key="5" class="key ui-box t">
+      <kbd>T</kbd>
+      <span>Frog</span>
+    </div>
+    <div class="pads" id="pad6" data-key="6" class="key ui-box y">
+      <kbd>Y</kbd>
+      <span>Monkey</span>
+    </div>
   </div>
+
+  <audio data-key="1" src="./sounds/chicken.mp3"></audio>
+  <audio data-key="2" src="./sounds/dog.mp3"></audio>
+  <audio data-key="3" src="./sounds/duck.mp3"></audio>
+  <audio data-key="4" src="./sounds/frog.mp3"></audio>
+  <audio data-key="5" src="./sounds/horse.mp3"></audio>
+  <audio data-key="6" src="./sounds/monkey.mp3"></audio>
 </body>
 </html>
