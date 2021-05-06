@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.drumkit{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pads{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 calc(33.33% - 20px);
+  background: radial-gradient(#ADD8E6, #00008b);
+}
+
+/* #margin */
