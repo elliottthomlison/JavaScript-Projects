@@ -3,6 +3,20 @@
   padding: 0;
 }
 
+#initial-color{
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  border: 3px solid black;
+  padding: 10px;
+  margin-top: 30px;
+}
+
 .allColors {
   display: flex;
   flex-wrap: wrap;
@@ -19,9 +33,33 @@
   background: white;
   transition: all .07s ease;
   text-shadow: 0 0 .5rem black; */
+  margin: 10px;
 }
 
 #pad1 {
   background-color: red;
-  margin: 30px;
+}
+
+#pad2 {
+  background-color: orange;
+}
+
+#pad3 {
+  background-color: red;
+}
+
+#pad4 {
+  background-color: orange;
+}
+
+#pad5 {
+  background-color: red;
+}
+
+#pad6 {
+  background-color: orange;
+}
+
+a {
+  font-size: 20vw;
 }
