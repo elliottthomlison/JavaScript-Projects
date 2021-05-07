@@ -63,3 +63,9 @@ body {
   background-image: url("./icons/monke.png");
   background-repeat: space;
 } 
+
+.text {
+  font-size: 20vw;
+  /* font-style: italic; */
+  font-family: Itim;
+}
