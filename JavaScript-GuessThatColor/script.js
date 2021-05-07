@@ -11,4 +11,4 @@ function changeColor(){
   document.getElementById("initial-color").style.backgroundColor = getRandomColor();
 }
 
-setInterval(changeColor,1000);
+setInterval(changeColor,500);
