@@ -6,7 +6,15 @@
     pads.classList.add('playing');
   }
 
+  function endSound (e) {
+    const pads = document.querySelector(`.pads[data-key="${e.keyCode}"]`);
+    if(!pads)
+      return;
+    pads.classList.remove('playing');
+  }
+
   window.addEventListener('keydown', playSound)
+  window.addEventListener('keyup', endSound)
 
 //Could use these at a later time but not now
 //if (!audio) => handle null keys
