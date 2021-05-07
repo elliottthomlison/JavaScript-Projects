@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+.text {
+  font-size: 20vw;
+  font-family: Itim;
+}
+
 body {
   background-color: black;
 }
@@ -80,8 +85,3 @@ a:hover {
   background-image: url("./icons/monkey.png");
   background-repeat: space;
 } 
-
-.text {
-  font-size: 20vw;
-  font-family: Itim;
-}

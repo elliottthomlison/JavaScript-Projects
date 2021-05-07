@@ -1,9 +1,9 @@
   // Solution varies from version prescribed by Wes Bos
   function playSound (e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+    const pads = document.querySelector(`.pads[data-key="${e.keyCode}"]`);
     audio.play();
-    key.classList.add('playing');
+    pads.classList.add('playing');
   }
 
   window.addEventListener('keydown', playSound)
