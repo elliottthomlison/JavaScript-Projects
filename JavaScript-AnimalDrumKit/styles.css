@@ -60,12 +60,11 @@ body {
 #pad6 {
   margin-bottom: 10px;
   margin-right: 10px;
-  background-image: url("./icons/monke.png");
+  background-image: url("./icons/monkey.png");
   background-repeat: space;
 } 
 
 .text {
   font-size: 20vw;
-  /* font-style: italic; */
   font-family: Itim;
 }
