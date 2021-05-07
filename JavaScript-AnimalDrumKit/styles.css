@@ -21,6 +21,14 @@ body {
   flex: 1 0 calc(33.33% - 20px);
   border-radius: 10px;
   background: white;
+  transition: all .07s ease;
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
 }
 
 #pad1 {
