@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.allColors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 calc(33.33% - 20px);
+  /* border-radius: 10px;
+  background: white;
+  transition: all .07s ease;
+  text-shadow: 0 0 .5rem black; */
+}
+
+#pad1 {
+  background-color: red;
+  margin: 30px;
+}
