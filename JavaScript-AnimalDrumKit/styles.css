@@ -23,6 +23,26 @@ body {
   background: white;
   transition: all .07s ease;
   text-shadow: 0 0 .5rem black;
+
+  /* padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999; */
+}
+
+a:hover {
+  border: 10px solid lightpink;
+}
+
+.pads:active {
+  border: 10px solid lightpink;
+  transform: translateY(2px) translateX(2px);
 }
 
 .playing {
