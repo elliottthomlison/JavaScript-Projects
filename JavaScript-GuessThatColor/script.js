@@ -7,8 +7,13 @@ function getRandomColor() {
     return color;
 }
 
-function changeColor(){
+function changeColor() {
   document.getElementById("initial-color").style.backgroundColor = getRandomColor();
 }
 
-setInterval(changeColor,500);
+let start = setInterval(changeColor,200)
+setTimeout(stop_interval, 1000);
+
+function stop_interval() {
+  clearInterval(start);
+}
