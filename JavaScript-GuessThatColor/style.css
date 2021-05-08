@@ -3,14 +3,30 @@
   padding: 0;
 }
 
+#startButton {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: lightpink;
+  color: black;
+  font-weight: 600;
+  padding:  32px;
+  font-size: 16px;
+}
+
+/* //startbutton on click + hover animation */
+
 #initial-color{
-  /* background-color: red; */
+  background-color: cornflowerblue;
   display: flex;
+  position: absolute;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  width: 300px;
+  height: 100vh;
   margin: auto;
   border: 3px solid black;
   padding: 10px;

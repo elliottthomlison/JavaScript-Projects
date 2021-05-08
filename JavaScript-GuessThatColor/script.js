@@ -17,15 +17,16 @@ function changeColor() {
 }
 
 function startGame() {
+  document.getElementById("initial-color").style.display
+  document.getElementById("startButton").style.display = 'none'
   let start = setInterval(changeColor, 200)
+  setTimeout(stop_interval, 1000);
 }
 startGame()
-
 
 //If I want to create a version that stops changing color momentarily *before* disappearing then I would use these methods
 //let start = setInterval(changeColor,200)
 //setTimeout(stop_interval, 1000);
-
 
 function stop_interval() {
   clearInterval(startGame());
