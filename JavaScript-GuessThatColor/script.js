@@ -16,12 +16,20 @@ function changeColor() {
   document.getElementById("initial-color").style.backgroundColor = getRandomColor();
 }
 
-let start = setInterval(changeColor,200)
-setTimeout(stop_interval, 1000);
+function startGame() {
+  let start = setInterval(changeColor, 200)
+}
+startGame()
+
+
+//If I want to create a version that stops changing color momentarily *before* disappearing then I would use these methods
+//let start = setInterval(changeColor,200)
+//setTimeout(stop_interval, 1000);
+
 
 function stop_interval() {
-  clearInterval(start);
+  clearInterval(startGame());
   setTimeout (function() {
     document.getElementById("initial-color").style.display = 'none'}, 
-    1001); 
+    1000); 
 }
