@@ -19,6 +19,7 @@ function changeColor() {
 function startGame() {
   document.getElementById("initial-color").style.display
   document.getElementById("startButton").style.display = 'none'
+  document.getElementById("instructions").style.display = 'none'
   let start = setInterval(changeColor, 200)
   setTimeout(stop_interval, 1000);
 }
