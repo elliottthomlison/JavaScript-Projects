@@ -1,21 +1,3 @@
-// function answers() {
-// document.getElementsByClassName("abc").onclick 
-//   this.disabled = true;
-// }
-
-function unclickable (button) {
-  button.disabled = true;
-}
-
-//trying to change the color of the letter based on a click event
-// document.getElementById('aaa').onclick = changeColor;   
-
-//     function changeColor() {
-//         document.body.style.color = "purple";
-//         return false;
-//     }   
-
-//words that will be part of the possible answers
 let answers = [
   'apple',
   'bananas',
@@ -33,6 +15,24 @@ let guessed = [];
 
 function randomWord() {
   answer = answers[Math.floor(Math.random() * answers.length)];
-  alert(answer)
 }
+
+
+function generateButtons() {
+  let buttonsHTML = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter =>
+    `
+      <button
+        class="btn btn-lg btn-primary m-2"
+        id='` + letter + `'
+        onClick="handleGuess('` + letter + `')"
+      >
+        ` + letter + `
+      </button>
+    `).join('');
+
+  document.getElementById('keyboard').innerHTML = buttonsHTML;
+}
+
+
 randomWord();
+generateButtons()
