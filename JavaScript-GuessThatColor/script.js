@@ -25,7 +25,7 @@ function startGame() {
   document.getElementById("startButton").style.display = 'none'
   document.getElementById("instructions").style.display = 'none'
   //start = how quickly it changes
-  let start = setInterval(changeColor, 100)
+  let start = setInterval(changeColor, 2000)
   setTimeout(stop_interval, 1000);
 }
 startGame()
@@ -43,17 +43,18 @@ function stop_interval() {
 }
 
 //create a variable to find the button that is going to be the 'correct' + store as a variable
-let correct;
-const correctButton = function() {
-  while (x < 7)
-  for(let i = 1; i < 6; i++){
-    Math.floor(Math.random() * 6) + 1;
+// let correct;
+// const correctNumber = function() {
+//   for(let i = 1; i < 6; i++){
+//     Math.floor(Math.random() * 6) + 1;
+//   }
+//   console.log(correct)
+// }
+// console.log(correctNumber())
 
-  }
-  // console.log(correct)
-}
-console.log(correctButton())
+// const numberAssignment = function() {
 
+// }
 //attach the *correct* number to the lastColor from getRandomColor
 // let correct = lastColor
 
