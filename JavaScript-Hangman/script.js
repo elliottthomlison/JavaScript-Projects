@@ -4,15 +4,16 @@ let programming_languages = [
 	"snake",
 	"bird",
 	"rabbit",
-	"html",
-	"css",
-	"c",
-	"csharp",
-	"golang",
-	"kotlin",
-	"php",
-	"sql",
-	"ruby"
+	"toilet",
+	"speaker",
+	"kisses",
+	"to",
+	"the",
+	"bootyhole",
+	"hehe",
+	"made",
+	"you",
+  "laugh"
 ]
 
 let answer = '';
