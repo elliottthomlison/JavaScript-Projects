@@ -1,0 +1,25 @@
+#XO-container{
+  border: 5px solid black;
+  display: grid;
+  height: 500px;
+  width: 500px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  margin: auto;
+  background-color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.XO {
+  /* border: 3px solid black; */
+
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
