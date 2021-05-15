@@ -1,0 +1,12 @@
+#XO-container{
+  border: 5px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: repeat(3, 12vw);
+}
+
+/* .XO {
+  border: 5px solid black;
+  width: 100px;
+  height: 100px;
+} */
