@@ -1,13 +1,9 @@
-function keyboardAppear() {
-  generateButtons();
-}
-
-var programming_languages = [
-	"python",
-	"javascript",
-	"mongodb",
-	"json",
-	"java",
+let programming_languages = [
+	"cat",
+	"dog",
+	"snake",
+	"bird",
+	"rabbit",
 	"html",
 	"css",
 	"c",
@@ -44,9 +40,13 @@ function generateButtons() {
   document.getElementById('keyboard').innerHTML = buttonsHTML;
 }
 
+function keyboardAppear() {
+  generateButtons();
+  document.getElementById('maxWrong').innerHTML = maxWrong;
+}
+
 function handleGuess(chosenLetter) {
   guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
-  document.getElementById(chosenLetter).setAttribute('disabled', true);
 
   if (answer.indexOf(chosenLetter) >= 0) {
     guessedWord();
@@ -57,10 +57,6 @@ function handleGuess(chosenLetter) {
     checkIfGameLost();
     updateHangmanPicture();
   }
-}
-
-function updateHangmanPicture() {
-  document.getElementById('hangmanPic').src = './images/' + mistakes + '.jpg';
 }
 
 function checkIfGameWon() {
@@ -95,6 +91,10 @@ function reset() {
   guessedWord();
   updateMistakes();
   generateButtons();
+}
+
+function updateHangmanPicture() {
+  document.getElementById('hangmanPic').src = './images/' + mistakes + '.jpg';
 }
 
 document.getElementById('maxWrong').innerHTML = maxWrong;
