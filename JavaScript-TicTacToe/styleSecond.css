@@ -23,6 +23,14 @@ body {
   background-color: white;
 }
 
+/* .board.x .cell:hover {
+  content: '';
+  position: absolute;
+  width: calc(var(--mark-size) * .15);
+  height: var(--mark-size);
+  background-color: lightgray;
+} */
+
 .cell {
   width: var(--cell-size);
   height: var(--cell-size);
@@ -30,6 +38,61 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.cell.x::before,
+.cell.x::after,
+.cell.o::before {
+  background-color: black;
+}
+
+.board.x .cell:not(.x):not(.o):hover::before,
+.board.x .cell:not(.x):not(.o):hover::after,
+.board.o .cell:not(.x):not(.o):hover::before {
+  background-color: lightgrey;
+}
+
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.o):hover::before,
+.board.x .cell:not(.x):not(.o):hover::after {
+  content: '';
+  position: absolute;
+  width: calc(var(--mark-size) * .15);
+  height: var(--mark-size);
+}
+
+.cell.x::before,
+.board.x .cell:not(.x):not(.o):hover::before {
+  transform: rotate(45deg);
+}
+
+.cell.x::after,
+.board.x .cell:not(.x):not(.o):hover::after {
+  transform: rotate(-45deg);
+}
+
+.cell.o::before,
+.cell.o::after,
+.board.o .cell:not(.x):not(.o):hover::before,
+.board.o .cell:not(.x):not(.o):hover::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cell.o::before,
+.board.o .cell:not(.x):not(.o):hover::before {
+  width: calc(var(--mark-size) * .9);
+  height: calc(var(--mark-size) * .9);
+}
+
+.cell.o::after,
+.board.o .cell:not(.x):not(.o):hover::after {
+  width: calc(var(--mark-size) * .65);
+  height: calc(var(--mark-size) * .65);
+  background-color: white;
 }
 
 .cell:first-child, 
@@ -56,19 +119,22 @@ body {
   border-right: none;
 }
 
-.cell.x::before,
-.cell.x::after {
-  content: '';
-  width: calc(var(--mark-size) * .15);
-  height: var(--mark-size);
-  background-color: black;
+.board.x .cell:hover::before,
+.board.x .cell:hover::after {
+  background-color: lightgrey;
 }
 
-.cell.x::before{
-  transform: rotate(45deg);
-  position: absolute;
+.winning-message {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: pink;
 }
 
-.cell.x::after{
-  transform: rotate(-45deg);
+#restartButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
