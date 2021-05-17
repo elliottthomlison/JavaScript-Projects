@@ -125,16 +125,27 @@ body {
 }
 
 .winning-message {
+  display: flex;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: pink;
-}
-
-#restartButton {
-  display: flex;
+  background-color: black;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-size: 25px;
+  flex-direction: column;
+}
+
+.winning-message button {
+  background-color: white;
+
+}
+
+.winning-message button:hover {
+  background-color: black;
+  color: white;
+  
 }
