@@ -4,7 +4,7 @@
 
 :root {
   --cell-size: 100px;
-  --mark-size: calc(var(--cell-size * .9));
+  --mark-size: calc(var(--cell-size) * .9);
 }
 
 body {
@@ -17,6 +17,8 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: repeat(3, auto);
   background-color: white;
 }
@@ -55,21 +57,18 @@ body {
 }
 
 .cell.x::before,
-.cell.x::after,
-.board.x .cell:not(.x):not(.circle):hover::before,
-.board.x .cell:not(.x):not(.circle):hover::after {
+.cell.x::after {
   content: '';
-  position: absolute;
   width: calc(var(--mark-size) * .15);
   height: var(--mark-size);
+  background-color: black;
 }
 
-.cell.x::before,
-.board.x .cell:not(.x):not(.circle):hover::before {
+.cell.x::before{
   transform: rotate(45deg);
+  position: absolute;
 }
 
-.cell.x::after,
-.board.x .cell:not(.x):not(.circle):hover::after {
+.cell.x::after{
   transform: rotate(-45deg);
 }
