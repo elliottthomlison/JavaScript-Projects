@@ -1,16 +1,11 @@
-/* .board {
+body {
   width: 100vw;
   height: 100vh;
-  display: grid;
+  display: flex;
   justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: repeat(7, auto);
-  grid-template-rows: repeat(6, auto);
-  background-color: black;
+  background: white;
+  align-items: flex-end;
 }
- */
 
 .board {
   display: grid;
@@ -25,8 +20,10 @@
 .cell {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  padding: 40px;
   font-size: 30px;
   text-align: center;
   border-radius: 100%;
+  margin: 5px;
+
 } 
