@@ -1,4 +1,4 @@
-.board {
+/* .board {
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -10,4 +10,23 @@
   grid-template-rows: repeat(6, auto);
   background-color: black;
 }
+ */
 
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(7, auto);
+  background-color: blue;
+  padding: 10px;
+  width: 50%;
+  height: 1000px;
+}
+
+.cell {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 100%;
+} 
