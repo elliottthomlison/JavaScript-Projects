@@ -2,3 +2,5 @@
 const board = document.getElementById('board');
 const cellElements = document.querySelectorAll('[data-cell]');
 const winningMessageElement = document.getElementById('winningMessage');
+const restartButton = document.getElementById('restartButton');
+const winningMessageElement = document.querySelector('[data-winning-message-text');
