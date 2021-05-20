@@ -8,3 +8,7 @@ const winningMessageElement = document.querySelector('[data-winning-message-text
 let blueTurn;
 const blue_class = 'blue'
 const red_class = 'red'
+
+const winningCombinations = [
+  
+]
