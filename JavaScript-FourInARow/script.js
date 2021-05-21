@@ -13,8 +13,17 @@ const winningCombinations = [
   comebacklater
 ]
 
-function startGame() {
+startGame();
 
+function startGame() {
+  blueTurn = false;
+  cellElements.forEach(cell => {
+    cell.classList.remove(blue_class);
+    cell.classList.remove(red_class);
+    cell.removeEventListener('click', handleClick)
+    cell.addEventListener('click', handleClick, { once: true })
+  })
+  winningMessageElement.classList.remove('show')
 }
 
 //apply one click allowance on each cell
