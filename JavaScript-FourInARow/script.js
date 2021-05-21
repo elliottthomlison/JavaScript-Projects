@@ -1,5 +1,3 @@
-console.log("test")
-
 //variables
 const board = document.getElementById('board');
 const cellElements = document.querySelectorAll('[data-cell]');
@@ -33,9 +31,28 @@ cellElements.forEach(cell => {
   cell.addEventListener('click', handleClick, { once: true})
 });
 
+  // var divItems = document.getElementsByClassName("cell");
+  
+  function selected(item) {
+    if (blue_class){
+      item.style.backgroundColor = 'blue'
+    } else {
+      item.style.backgroundColor = 'red'
+    }
+  }
+  
+  // function clear() {
+  //     for(var i=0; i < cellElements.length; i++) {
+  //         var item = cellElements[i];
+  //         item.style.backgroundColor = 'white';
+  //     }
+  // }
+
 function handleClick(e) {
   const cell = e.target 
   const currentClass = blueTurn ? blue_class : red_class
+
+  onclick=selected(this)
 
   placeMark(cell, currentClass)
 
@@ -54,5 +71,5 @@ function placeMark(cell, currentClass){
 }
 
 function swapTurns() {
-  circleTurn = !circleTurn
+  blue_class = !blue_class
 }
