@@ -12,3 +12,16 @@ const red_class = 'red'
 const winningCombinations = [
   comebacklater
 ]
+
+function startGame() {
+
+}
+
+//apply one click allowance on each cell
+cellElements.forEach(cell => {
+  cell.addEventListener('click', handleClick, { once: true})
+});
+
+function handleClick() {
+
+}
