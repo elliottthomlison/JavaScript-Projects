@@ -31,6 +31,26 @@ cellElements.forEach(cell => {
   cell.addEventListener('click', handleClick, { once: true})
 });
 
-function handleClick() {
+function handleClick(e) {
+  const cell = e.target 
+  const currentClass = circleTurn ? blue_class : red_class
 
+  placeMark(cell, currentClass)
+
+  if (checkWin(currentClass)) {
+    endGame(false)
+  } else if (isDraw()) {
+    endGame(true)
+  } else {
+    swapTurns()
+    setBoardHoverClass()
+  } 
+}
+
+function placeMark(cell, currentClass){
+  cell.classList.add(currentClass)
+}
+
+function swapTurns() {
+  circleTurn = !circleTurn
 }
