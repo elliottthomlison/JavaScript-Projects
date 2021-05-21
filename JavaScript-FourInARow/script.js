@@ -1,17 +1,19 @@
+console.log("test")
+
 //variables
 const board = document.getElementById('board');
 const cellElements = document.querySelectorAll('[data-cell]');
 const winningMessageElement = document.getElementById('winningMessage');
 const restartButton = document.getElementById('restartButton');
-const winningMessageElement = document.querySelector('[data-winning-message-text');
+const winningMessageTextElement = document.querySelector('[data-winning-message-text');
 
 let blueTurn;
 const blue_class = 'blue'
 const red_class = 'red'
 
-const winningCombinations = [
-  comebacklater
-]
+// const winningCombinations = [
+//   comebacklater
+// ]
 
 startGame();
 
@@ -33,18 +35,18 @@ cellElements.forEach(cell => {
 
 function handleClick(e) {
   const cell = e.target 
-  const currentClass = circleTurn ? blue_class : red_class
+  const currentClass = blueTurn ? blue_class : red_class
 
   placeMark(cell, currentClass)
 
-  if (checkWin(currentClass)) {
-    endGame(false)
-  } else if (isDraw()) {
-    endGame(true)
-  } else {
-    swapTurns()
-    setBoardHoverClass()
-  } 
+  // if (checkWin(currentClass)) {
+  //   endGame(false)
+  // } else if (isDraw()) {
+  //   endGame(true)
+  // } else {
+  //   swapTurns()
+  //   setBoardHoverClass()
+  // } 
 }
 
 function placeMark(cell, currentClass){
